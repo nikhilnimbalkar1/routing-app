@@ -28,7 +28,7 @@ class Nav extends Component {
           // vehicle.url: https://swapi.co/api/vehicles/4/
           const id = vehicle.url.split('/')[5]
           return (
-            <li key={index}>
+            <li className="list-group-item" key={index}>
               <NavLink activeStyle={{fontWeight: 'bold'}} to={`/vehicle/${id}`}>
                 {vehicle.name}
               </NavLink>

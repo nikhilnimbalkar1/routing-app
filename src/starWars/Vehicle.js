@@ -52,6 +52,10 @@ class Vehicle extends Component {
     }
   }
 
+  goBack(){
+    window.history.back();
+  }
+
   render() {
     const { vehicle } = this.state
     return (
@@ -60,6 +64,7 @@ class Vehicle extends Component {
       <p>Model: {vehicle.model}</p>
       <p>Manufacturer: {vehicle.manufacturer}</p>
       <p>URL: {vehicle.url}</p>
+      <button className="btn btn-outline-info" onClick={this.goBack}>Go Back</button>
       </>
     )
   }
